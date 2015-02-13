@@ -43,10 +43,9 @@ end
 group :production do
   gem 'pg',                         '0.17.1'
   gem 'rails_12factor',             '0.0.2'
+  # Use unicorn as the app server
+  gem 'unicorn',                    '4.8.3'
 end
-
-# Use unicorn as the app server
-# gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
